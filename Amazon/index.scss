@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+.navbar {
+    color: white;
+    background-color: rgb(7, 6, 27);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 7vh;
+}
+.nav-logo {
+    height: 5vh;
+    width: 10%;
+    background-image: url("./Images/amazon_logo.png ");
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+}
+.nav-logo:hover {
+    outline: 1.5px solid white;
+}
+.nav-location {
+    cursor: pointer;
+}
+.nav-location:hover {
+    outline: 1.5px solid white;
+}
+.nav-location h2 {
+    font-weight: 400;
+    font-size: 0.5rem;
+    margin-left: 0.43rem;
+}
+.nav-location h3 {
+    font-size: 0.5rem;
+}
+.nav-search {
+    width: 50%;
+    display: flex;
+    height: 4vh;
+    border-radius: 2px;
+    overflow: hidden;
+}
+.nav-search :hover {
+    outline: 1.5px solid orange;
+}
+.nav-search #all {
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+.nav-search input {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding-bottom: 2px;
+}
+.nav-search input::placeholder {
+    font-size: 0.6rem;
+}
+.nav-search i {
+    color: black;
+    font-size: 0.5rem;
+    height: 4vh;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 145, 0);
+    cursor: pointer;
+}
+.nav-signin {
+    cursor: pointer;
+}
+.nav-signin:hover {
+    outline: 1.5px solid white;
+}
+.nav-signin h2 {
+    font-size: 0.5rem;
+    font-weight: 400;
+}
+.nav-signin h1 {
+    font-size: 0.5rem;
+    font-weight: 800;
+}
+.nav-returns {
+    cursor: pointer;
+}
+.nav-returns:hover {
+    outline: 1.5px solid white;
+}
+.nav-returns h2 {
+    font-size: 0.5rem;
+    font-weight: 400;
+}
+.nav-returns h1 {
+    font-size: 0.5rem;
+    font-weight: 800;
+}
+.nav-cart {
+    cursor: pointer;
+}
+.nav-cart:hover {
+    outline: 1.5px solid white;
+}
+.nav-cart i {
+    font-size: 1rem;
+}
+.nav-cart h1 {
+    font-size: 0.5rem;
+    font-weight: 800;
+}
+.menubox {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(5, 20, 39, 0.887);
+    color: white;
+    height: 5vh;
+}
+.menu {
+    font-size: 0.4rem;
+    cursor: pointer;
+}
+.menu:hover {
+outline: 1px solid white;
+}
+.menubox .list {
+    width: 70%;
+    max-width: 900px;
+}
+.menubox .list ul {
+    display: flex;
+}
+.menubox .list li {
+    list-style: none;
+    margin: 0 0.4rem;
+    font-size: 0.6rem;
+    font-weight: 700;
+    cursor: pointer;
+
+}
+.menubox .list li:hover {
+    outline: 1px solid white;
+}
+
+.menubox .shop {
+    font-size: 0.3rem;
+    cursor: pointer;
+}
+.menubox .shop:hover {
+    outline: 1px solid white;
+}
+.imagebox {
+    background-image: url("./Images/hero_image.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 40vw;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+.imagebox a {
+    color: rgba(29, 154, 232, 0.953);
+    text-decoration: none;
+}
+.text {
+    font-size: 0.3rem;
+    background-color: white;
+    width: 80%;
+    margin-bottom: 1rem;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product {
+    background-color: rgba(115, 245, 149, 0.358);
+}
+.product .itembox {
+    display: flex;
+}
+.product .otheritembox {
+    display: flex;
+}
+.product .box {
+    width: 25%;
+    background-color: white;
+    margin: 5px;
+}
+.product .item {
+    margin: 8px;
+}
+.product img {
+    width: 100%;
+    height: 30vh;
+
+}
+.product h3 {
+    margin-bottom: 5px;
+    font-size: 0.8rem;
+}
+.product span {
+    font-size: 0.6rem;
+    color: rgba(29, 154, 232, 0.953);
+    font-weight: 600;
+    cursor: pointer;
+}
+.tap {
+    background-color: rgba(5, 20, 39, 0.887);
+    color: white;
+    font-size: 0.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4vh;
+    cursor: pointer;
+    transition: background-color 1s ease-in-out;
+}
+.tap:hover {
+    background-color: rgba(9, 46, 77, 0.693);
+}
+.footer-list {
+    background-color: rgb(3, 22, 40);
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 40vh;
+}
+.footer-list .heading {
+    font-size: 0.7rem;
+    font-weight: 300;
+    margin-left: 4px;
+    margin-bottom: 3px;
+}
+.footer-list ul {
+    display: flex;
+    flex-direction: column;
+}
+.footer-list li {
+    list-style: none;
+    font-size: 0.5rem;
+    padding: 0.3rem;
+    cursor: pointer;
+}
+.footer-list li:hover {
+    text-decoration: underline;
+}
+.line {
+    height: 2px;
+    background-color: black;
+}
+.logobox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(3, 22, 40);
+    height: 10vh;
+}
+.logobox img {
+    width: 100px;
+    height: 50px;
+}
