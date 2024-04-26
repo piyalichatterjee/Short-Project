@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-image: url("./images/ken-cheung-KonWFWUaAuk-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    height: 8vh;
+    width: 10%;
+    justify-content: center;
+    font-size: 2rem;
+    cursor: pointer;
+}
+#menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(15, 15, 15, 0.559);
+}
+.navmanu li {
+    list-style: none;
+    margin: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: white;
+}
+#btn {
+    width: 6%;
+    aspect-ratio: 1;
+    position: absolute;
+    top: 4%;
+    right: 5%;
+    background-image: url("./images/images.png");
+    background-position: center;
+    background-size: cover;
+    border: none;
+    z-index: 1;
+    display: none;
+    cursor: pointer;
+}
+@media only screen and (max-width: 450px) {
+    .logo {
+        margin-top: 0.6rem;
+    }
+    #menu {
+        color: white;
+        position: fixed;
+        inset: 0 0 0 25%;
+        flex-direction: column;
+        padding: min(20vh, 8rem) 1rem;
+        transform: translateX(100%);
+    }
+    #menu[popup="true"] {
+        transform: translateX(0%);
+    }
+    #btn {
+        display: block;
+    }
+    #btn[click="true"] {
+        background-image: url("./images/xmark-icon-2048x2047-efomjlqb.png");
+        background-size: cover;
+        background-position: center;
+    }
+}
